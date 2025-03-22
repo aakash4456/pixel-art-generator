@@ -7,7 +7,7 @@ import Home from './Components/Home.jsx';
 import Grid from './Components/Grid.jsx'
 import Grid_Context_provider from './GridContext/Grid_Context_provider.jsx';
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/' element={<App />}>
       <Route path='' element={<Grid_Context_provider> <Home /> </Grid_Context_provider>} />
