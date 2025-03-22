@@ -1,0 +1,54 @@
+#style1 {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* position: absolute;
+    right: 12px; */
+    width: 40px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Fixing pseudo-element syntax */
+#style1::-webkit-color-swatch {
+    border: 1px solid #37363e;
+    border-radius: 15px;
+    /* border: none; */
+}
+
+#style1::-moz-color-swatch {
+    border-radius: 15px;
+    border: none;
+}
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 60px;
+    background-color: gray;
+    color: #000000;
+    text-align: center;
+    padding: 2px;
+    border-radius: 5px;
+    font-size: small;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-30%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
